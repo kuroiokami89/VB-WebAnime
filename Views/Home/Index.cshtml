@@ -1,0 +1,11 @@
+﻿@model List<AnimeDTO>
+
+<h1>HOMEPAGE</h1>
+
+@foreach (var anime in Model)
+{
+    <div class="anime">
+        <h3>@anime.Title</h3>
+        <img src="@anime.Images.Webp.Image_Url" alt="@anime.Title" />
+    </div>
+}
